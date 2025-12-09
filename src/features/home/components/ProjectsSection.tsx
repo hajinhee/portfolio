@@ -31,7 +31,7 @@ export function ProjectsSection() {
                 onClick={() => setSelectedProject(project)}
               >
                 <div className="aspect-video bg-[#f1f5f9] dark:bg-[#1a1a1a] overflow-hidden">
-                  <Badge color="blue">개발중</Badge>
+                  {/* <Badge color="blue">개발중</Badge> */}
 
                   <img
                     src={project.image}

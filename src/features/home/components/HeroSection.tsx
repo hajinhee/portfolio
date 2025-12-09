@@ -68,9 +68,8 @@ export function HeroSection() {
         </div>
 
         <p className="text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
-          프론트엔드 기술과 창의적 사고를 결합해 사용자 친화적 웹 경험을 만드는
-          개발자입니다. 현대적인 스택과 감각적인 UI로 비즈니스 성과를 높이는
-          솔루션을 제공합니다.
+          새로운 기술을 배우고 실험하는 데 거리낌이 없으며, 기술이 사용자 경험을
+          어떻게 더 나아지게 만들 수 있는지 항상 고민합니다.
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center">
@@ -80,13 +79,13 @@ export function HeroSection() {
           >
             &gt; View Projects
           </a>
-          <a
+          {/* <a
             href="assets/pdfs/resume.pdf"
             download={`${year}${month}${day}_하진희.pdf`}
             className="px-8 py-3 border-2 border-[#007acc] dark:border-[#39FF14] text-[#007acc] dark:text-[#39FF14] rounded-md hover:bg-[#007acc]/10 dark:hover:bg-[#39FF14]/10 transition-colors whitespace-nowrap cursor-pointer"
           >
             &gt; Download Resume
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

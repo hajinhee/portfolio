@@ -1,6 +1,5 @@
 import { Project } from "@/types";
 import { useEffect, useState } from "react";
-import { Carousel } from "react-responsive-carousel";
 
 interface ProjectModalProps {
   project: Project;
@@ -141,7 +140,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           )}
 
           {/* 주요 기능 */}
-          <div className="mb-6">
+          {/* <div className="mb-6">
             <h3 className="text-xl font-bold mb-3">주요 기능</h3>
             <ul className="space-y-2">
               {project.features.map((feature, index) => (
@@ -153,7 +152,8 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
+
           {/* 기술 스택 */}
           <div className="mb-6">
             <h3 className="text-xl font-bold mb-3">기술 스택</h3>
@@ -168,6 +168,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               ))}
             </div>
           </div>
+
           {/* 액션 버튼 */}
           <div className="flex flex-wrap gap-4">
             {project.designUrl && (

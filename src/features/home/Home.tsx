@@ -6,7 +6,7 @@ import { ProjectsSection } from "./components/ProjectsSection";
 import { ContactSection } from "./components/ContactSection";
 
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
