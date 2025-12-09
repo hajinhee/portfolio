@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                          // 최신 JS 기능 사용
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],    // 브라우저와 최신 JS API 지원
+    "jsx": "react-jsx",                           // React 17+ JSX 변환
+    "module": "ESNext",                           // ES 모듈
+    "moduleResolution": "bundler",               // Vite 권장
+    "strict": true,                               // 엄격한 타입 검사
+    "esModuleInterop": true,                      // CommonJS import 호환
+    "skipLibCheck": true,                         // 라이브러리 타입 체크 생략
+    "forceConsistentCasingInFileNames": true,    // 파일 이름 대소문자 일관성
+    "allowSyntheticDefaultImports": true  ,
+    
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "vite.config.ts"],          // 소스 폴더와 Vite 설정 포함
+  "exclude": ["node_modules", "dist"]           // 제외할 폴더
+}
